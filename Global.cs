@@ -9,6 +9,9 @@ global using System.Windows.Shapes;
 global using System.Threading.Tasks;
 global using System.Windows.Controls;
 global using System.Windows.Documents;
+global using System.Windows.Threading;
 global using System.Windows.Navigation;
 global using System.Collections.Generic;
 global using System.Windows.Media.Imaging;
+
+global using kasu.CustomDiscordRP.Events;
