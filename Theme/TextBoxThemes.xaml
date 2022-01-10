@@ -1,2 +1,50 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"></ResourceDictionary>
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Style TargetType="TextBox" x:Key="TextBoxTheme">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="TextBox">
+					<Border Background="#1f1f1f"
+                            CornerRadius="5">
+						<Grid>
+							<TextBox Text="{Binding Text,
+                                            RelativeSource={RelativeSource TemplatedParent}, 
+                                            Mode=TwoWay,
+                                            UpdateSourceTrigger=PropertyChanged}"
+                                     BorderThickness="0"
+                                     Background="Transparent"
+									 CaretBrush="DimGray"
+									 SelectionBrush="DimGray"
+									 SelectionLength="0"
+                                     VerticalContentAlignment="Center"
+                                     Padding="2,-4,0,0"
+									 MaxLength="{Binding MaxLength,RelativeSource={RelativeSource TemplatedParent}}"
+                                     Foreground="#D1D1D1"
+                                     x:Name="PlaceHolder"/>
+
+							<TextBlock IsHitTestVisible="False"
+                                       Text="{Binding Uid,RelativeSource={RelativeSource TemplatedParent}}"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="10,-1,0,0"
+                                       FontSize="15"
+                                       Foreground="DimGray">
+
+								<TextBlock.Style>
+									<Style TargetType="{x:Type TextBlock}">
+										<Style.Triggers>
+											<DataTrigger Binding="{Binding Text, ElementName=PlaceHolder}" Value="">
+												<Setter Property="Visibility" Value="Visible"/>
+											</DataTrigger>
+										</Style.Triggers>
+										<Setter Property="Visibility" Value="Hidden"/>
+									</Style>
+								</TextBlock.Style>
+							</TextBlock>
+						</Grid>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

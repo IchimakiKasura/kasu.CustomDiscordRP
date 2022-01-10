@@ -48,171 +48,314 @@
 				</Grid>
 			</Border>
 
-			<!-- Middle -->
-			<Label Content="Cliend ID:"
+			<!--#region Middle-->
+			<Label Content="Client ID:"
 				   Foreground="#D1D1D1"
 				   Margin="10,38,582,433"/>
-			<TextBox HorizontalAlignment="Left"
+			<TextBox x:Name="Input_ClientID"
+					 HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="72,38,0,0"
 					 TextWrapping="NoWrap"
 					 Width="255"
 					 Height="29"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="Client ID"/>
 
 			<Label Content="Details:"
 				   Foreground="#D1D1D1"
 				   Margin="10,72,582,399"/>
-			<TextBox HorizontalAlignment="Left"
+			<TextBox x:Name="Input_Details" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="72,72,0,0"
 					 TextWrapping="NoWrap"
 					 Width="255"
 					 Height="29"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="Details"/>
 
 			<Label Content="State:"
 				   Foreground="#D1D1D1"
 				   Margin="10,106,582,365"/>
-			<TextBox HorizontalAlignment="Left"
+			<TextBox x:Name="Input_State" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="72,106,0,0"
 					 TextWrapping="NoWrap"
 					 Width="255"
 					 Height="29"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="State"/>
 
 			<RadioButton Content="Start Time" Foreground="#D1D1D1" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top"/>
 			<RadioButton Content="End Time" Foreground="#D1D1D1" HorizontalAlignment="Left" Margin="131,150,0,0" VerticalAlignment="Top"/>
 			<RadioButton Content="Current Time" Foreground="#D1D1D1" HorizontalAlignment="Left" Margin="239,150,0,0" VerticalAlignment="Top"/>
-			<TextBox HorizontalAlignment="Left"
+			<TextBox x:Name="Input_Time" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="10,170,0,0"
 					 TextWrapping="NoWrap"
 					 Width="317"
 					 Height="29"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="1507665886"/>
 
 			<Label Content="Large:"
 				   HorizontalContentAlignment="Center"
 				   Foreground="#D1D1D1"
 				   Margin="10,204,489,267"/>
-			<TextBox HorizontalAlignment="Left"
+			<TextBox x:Name="Input_LargeImage" HorizontalAlignment="Left"
 					 VerticalAlignment="Center"
 					 Margin="10,0,0,0"
 					 TextWrapping="NoWrap"
 					 Width="155"
 					 Height="30"
-					 FontSize="20"/>
-			<TextBox HorizontalAlignment="Left"
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="Image"/>
+			<TextBox x:Name="Input_LargeText" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="10,272,0,0"
 					 TextWrapping="NoWrap"
 					 Width="155"
 					 Height="29"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="Text"/>
 
 			<Label Content="Small:"
 				   HorizontalContentAlignment="Center"
 				   Foreground="#D1D1D1"
 				   Margin="172,206,327,265"/>
-			<TextBox HorizontalAlignment="Left"
+			<TextBox x:Name="Input_SmallImage" HorizontalAlignment="Left"
 					 VerticalAlignment="Center"
 					 Margin="172,0,0,0"
 					 TextWrapping="NoWrap"
 					 Width="155"
 					 Height="30"
-					 FontSize="20"/>
-			<TextBox HorizontalAlignment="Left"
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="Image"/>
+			<TextBox x:Name="Input_SmallText" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="172,272,0,0"
 					 TextWrapping="NoWrap"
 					 Width="155"
 					 Height="29"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="Text"/>
 
 			<Label Content="Party ID:"
 				   Foreground="#D1D1D1"
 				   Margin="10,314,582,158"/>
-			<TextBox HorizontalAlignment="Left"
+			<TextBox x:Name="Input_PartyID" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="72,314,0,0"
 					 TextWrapping="NoWrap"
 					 Width="255"
 					 Height="28"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="Party ID"/>
 
 			<Label Content="Party Code:"
 				   Foreground="#D1D1D1"
 				   Margin="10,348,572,124"/>
-			<TextBox HorizontalAlignment="Left"
+			<TextBox x:Name="Input_PartyCode" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="82,348,0,0"
 					 TextWrapping="NoWrap"
 					 Width="245"
 					 Height="28"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="Join Secret"/>
 
 			<Label Content="Minimum:"
 				   Foreground="#D1D1D1"
 				   Margin="336,349,246,124"/>
-			<TextBox HorizontalAlignment="Left"
+			<TextBox x:Name="Input_PartySizeMin" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="408,348,0,0"
 					 TextWrapping="NoWrap"
-					 Width="50"
+					 Width="79"
 					 Height="28"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="min"/>
 
 			<Label Content="Maximum:"
 				   Foreground="#D1D1D1"
-				   Margin="458,348,124,124"/>
-			<TextBox HorizontalAlignment="Left"
+				   Margin="492,348,90,124"/>
+			<TextBox x:Name="Input_PartySizeMax" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
-					 Margin="530,348,0,0"
+					 Margin="564,348,0,0"
 					 TextWrapping="NoWrap"
-					 Width="50"
+					 Width="80"
 					 Height="28"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="Max"/>
 
 			<Label Content="Button:"
 				   Foreground="#D1D1D1"
 				   Margin="10,381,582,91"/>
-			<TextBox HorizontalAlignment="Left"
+			<TextBox x:Name="Input_ButtonOneText" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="72,381,0,0"
 					 TextWrapping="NoWrap"
 					 Width="255"
 					 Height="28"
-					 FontSize="20"/>
-			<TextBox HorizontalAlignment="Left"
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="Text"/>
+			<TextBox x:Name="Input_ButtonOneURL" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
-					 Margin="342,381,0,0"
+					 Margin="336,381,0,0"
 					 TextWrapping="NoWrap"
-					 Width="255"
+					 Width="308"
 					 Height="28"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="URL"/>
 
 			<Label Content="Button:"
 				   Foreground="#D1D1D1"
 				   Margin="10,414,582,58"/>
-			<TextBox HorizontalAlignment="Left"
+			<TextBox x:Name="Input_ButtonTwoText" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="72,414,0,0"
 					 TextWrapping="NoWrap"
 					 Width="255"
 					 Height="28"
-					 FontSize="20"/>
-			<TextBox HorizontalAlignment="Left"
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="Text"/>
+			<TextBox x:Name="Input_ButtonTwoURL" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
-					 Margin="342,414,0,0"
+					 Margin="336,414,0,0"
 					 TextWrapping="NoWrap"
-					 Width="255"
+					 Width="308"
 					 Height="28"
-					 FontSize="20"/>
+					 FontSize="20"
+					 Style="{StaticResource TextBoxTheme}"
+					 Uid="URL"/>
+			<!--#endregion-->
 
 			<!-- Discord Preview -->
-			<WebBrowser x:Name="RPPreview" Height="300" Width="300" Canvas.Left="340" Canvas.Top="63" Margin="342,38,12,162"/>
+			<GroupBox Header="Preview" Margin="336,38,10,158" Foreground="#D1D1D1" BorderThickness=".5">
+				<Grid>
+					<Border Margin="32,10,32,214" Background="#5468ff" CornerRadius="20,20,0,0"/>
+					<Border Margin="47,23,172,176" BorderBrush="#2C2F33" BorderThickness="5" CornerRadius="50">
+						<Grid>
+							<Border CornerRadius="50" Margin="-2,-2,-2,2">
+								<Border.Background>
+									<ImageBrush Stretch="Fill" ImageSource="pack://siteoforigin:,,,/Images/PFP.png"/>
+								</Border.Background>
+							</Border>
+							<Border Background="Green"
+									CornerRadius="50"
+									Width="20"
+									Height="20"
+									BorderBrush="#2C2F33"
+									BorderThickness="1.5" Margin="47,50,0,2"/>
+						</Grid>
+					</Border>
+					<TextBlock Text="Username "
+							   Margin="47,110,78,151"
+							   Foreground="#D1D1D1"
+							   FontSize="15"
+							   FontWeight="Bold"
+							   Width="auto">
+							<TextBlock Text="#0001"
+								   Foreground="DarkGray"
+								   FontSize="10"
+								   FontWeight="Thin"/>
+					</TextBlock>
+					<TextBlock Text="PLAYING A GAME"
+							   Margin="47,158,78,103"
+							   Foreground="DarkGray"
+							   FontSize="9"
+							   FontWeight="Bold"
+							   Width="auto"/>
+					<Border Margin="47,178,198,51" CornerRadius="5" x:Name="Preview_TestBG">
+						<Border.Background>
+							<ImageBrush Stretch="Fill" ImageSource="pack://siteoforigin:,,,/Images/discord.png"/>
+						</Border.Background>
+					</Border>
+					<TextBlock x:Name="Preview_ClientID" Text="Client ID's Title"
+							   Margin="107,178,10,91"
+							   Foreground="DarkGray"
+							   FontSize="10"
+							   FontWeight="Bold"
+							   Width="auto"/>
+					<TextBlock x:Name="Preview_Details" Text="Details"
+							   Margin="107,191,10,78"
+							   Foreground="DarkGray"
+							   FontSize="10"
+							   FontWeight="Thin"
+							   Width="auto"/>
+					<TextBlock x:Name="Preview_State" Text="State (Min of Max)"
+							   Margin="107,204,10,65"
+							   Foreground="DarkGray"
+							   FontSize="10"
+							   FontWeight="Thin"
+							   Width="auto"/>
+					<Button x:Name="Preview_ButtonOne" Content="Button 1"
+							HorizontalAlignment="Left"
+							Margin="47,235,0,0"
+							VerticalAlignment="Top"
+							Height="27"
+							Width="208"
+							Background="Gray"
+							BorderBrush="Transparent"
+							Foreground="#D1D1D1"
+							Cursor="Hand"
+							IsHitTestVisible="False">
+						<Button.Resources>
+							<Style TargetType="Border">
+								<Setter Property="CornerRadius" Value="5"/>
+							</Style>
+						</Button.Resources>
+					</Button>
+				</Grid>
+			</GroupBox>
+
+			<Button x:Name="Button_Connect" Content="Connect"
+							HorizontalAlignment="Left"
+							Margin="336,447,0,0"
+							VerticalAlignment="Top"
+							Height="20"
+							Width="111"
+							Background="Gray"
+							BorderBrush="Transparent"
+							Foreground="#D1D1D1"
+							Cursor="Hand" ToolTip="Connect">
+				<Button.Resources>
+					<Style TargetType="Border">
+						<Setter Property="CornerRadius" Value="5"/>
+					</Style>
+				</Button.Resources>
+			</Button>
+			<Button x:Name="Button_Disconnect" Content="Disconnect"
+							HorizontalAlignment="Left"
+							Margin="216,447,0,0"
+							VerticalAlignment="Top"
+							Height="20"
+							Width="111"
+							Background="Gray"
+							BorderBrush="Transparent"
+							Foreground="#D1D1D1"
+							Cursor="Hand" ToolTip="Disconnect">
+				<Button.Resources>
+					<Style TargetType="Border">
+						<Setter Property="CornerRadius" Value="5"/>
+					</Style>
+				</Button.Resources>
+			</Button>
 
 			<!-- Footer -->
 			<StatusBar x:Name="Statusbar"
@@ -220,19 +363,20 @@
 					   HorizontalAlignment="Center"
 					   Width="654"
 					   Background="#FF212427">
-				<TextBlock Padding="10,0,0,0"
-						   Text="Disconnected"/>
+				<TextBlock x:Name="Status_Text"
+							   Padding="10,0,0,0"
+							   Text="Disconnected"/>
 				<StatusBar.Resources>
 					<Style TargetType="Border">
 						<Setter Property="CornerRadius" Value="0,0,20,20"/>
 					</Style>
 				</StatusBar.Resources>
 			</StatusBar>
-			<Label Content="Development Build"
-				   Padding="0,5,0,0"
-				   Foreground="#5B5B5B"
-				   HorizontalAlignment="Center"
-				   Margin="0,472,0,0"/>
+			<Label x:Name="Version_Label"
+						   Content="Development Build"
+						   Padding="0,5,0,0"
+						   Foreground="#5B5B5B"
+						   HorizontalAlignment="Left" Margin="281,473,0,0"/>
 		</Grid>
 	</Border>
 

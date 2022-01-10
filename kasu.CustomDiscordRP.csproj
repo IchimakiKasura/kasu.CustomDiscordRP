@@ -15,5 +15,17 @@
     </PackageReference>
     <PackageReference Include="DiscordRichPresence" Version="1.0.175" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\discord.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\PFP.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\test.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   
 </Project>
