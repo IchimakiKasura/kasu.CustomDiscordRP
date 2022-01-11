@@ -35,7 +35,7 @@ public class kasu_Discord
 		status = "Connected";
 	}
 
-	private void SetPresence(kasu_Discord_Obj Text)
+	private async void SetPresence(kasu_Discord_Obj Text)
 	{
 		Assets Images = new()
 		{
@@ -64,17 +64,19 @@ public class kasu_Discord
 			Url = Text.ButtonTwoURL
 		};
 
-		client.SetPresence(new()
-		{
-			Details = Text.Details,
-			State = Text.State,
-			Assets = Images,
-			Party = party,
-			Buttons = new[]
+		await Task.Run(()=>{
+			client.SetPresence(new()
 			{
-				buttonsOne,
-				buttonsTwo
-			}
+				Details = Text.Details,
+				State = Text.State,
+				Assets = Images,
+				Party = party,
+				Buttons = new[]
+				{
+					buttonsOne,
+					buttonsTwo
+				}
+			});
 		});
 	}
 
@@ -83,10 +85,5 @@ public class kasu_Discord
 		client.ClearPresence();
 		client.Dispose();
 		status = "Disconnected";
-	}
-
-	public void Update()
-	{
-
 	}
 }
