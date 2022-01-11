@@ -2,6 +2,13 @@ namespace kasu.CustomDiscordRP;
 
 public partial class MainWindow
 {
+    // This is for Debug purposes
+    // To do the debug on the App just do "Ctrl+D"
+    //
+    // well its kinda like a debug but it just automatically
+    // adds the Inputs some texts so that ME as a developer don't
+    // need to retype every time when I build the App or run it
+    /// whenever I do some debugging.
     private void Debug()
     {
         KeyDown += delegate(object s, KeyEventArgs e)

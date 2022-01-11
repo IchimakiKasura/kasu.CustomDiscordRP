@@ -9,8 +9,8 @@ public partial class MainWindow
     public static TextChangedEventHandler ButtonPreview { get { return kasuCDRP_Events._ButtonOnChange; } }
     public static TextChangedEventHandler NumberBoxOnChange { get { return kasuCDRP_Events._NumberOnly; } }
 
-    public static SolidColorBrush DisconnectColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString(ColorsStruc.DisconnectedRED));
-    public static SolidColorBrush ConnectedColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString(ColorsStruc.ConnectedGREEN));
+    public static SolidColorBrush DisconnectColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF5B5B"));
+    public static SolidColorBrush ConnectedColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#5BFF5B"));
     
     public static RoutedEventHandler ConnectClick { get { return kasuCDRP_Events._ClickConnect; } }
     public static RoutedEventHandler DisconnectClick { get { return kasuCDRP_Events._ClickDisconnect; } }

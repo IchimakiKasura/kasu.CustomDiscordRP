@@ -248,7 +248,7 @@
 			<!-- Discord Preview -->
 			<GroupBox Header="Preview" Margin="336,38,10,158" Foreground="#D1D1D1" BorderThickness=".5">
 				<Grid>
-					<Border Margin="32,10,32,214" Background="#5468ff" CornerRadius="20,20,0,0"/>
+					<Border x:Name="Preview_Background" Margin="32,10,32,214" Background="#5468ff" CornerRadius="20,20,0,0"/>
 					<Border Margin="47,23,172,176" BorderBrush="#2C2F33" BorderThickness="5" CornerRadius="50">
 						<Grid>
 							<Border CornerRadius="50" Margin="-2,-2,-2,2">
@@ -256,7 +256,8 @@
 									<ImageBrush Stretch="Fill" ImageSource="pack://siteoforigin:,,,/Images/PFP.png"/>
 								</Border.Background>
 							</Border>
-							<Border Background="Green"
+							<Border x:Name="Preview_Status"
+									Background="Green"
 									CornerRadius="50"
 									Width="20"
 									Height="20"
@@ -264,7 +265,8 @@
 									BorderThickness="1.5" Margin="47,50,0,2"/>
 						</Grid>
 					</Border>
-					<TextBlock Text="Username "
+					<TextBlock x:Name="Preview_Username"
+							   Text="Username "
 							   Margin="47,110,78,151"
 							   Foreground="#D1D1D1"
 							   FontSize="15"
