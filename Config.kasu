@@ -1,16 +1,26 @@
 ! Only Change the values inside the quotes.
 ! Else it will not work.
 
-!Your Desired username:
-Username: "1234567890123456789012345678901234567890"
+!----------------------------------------------
+! Your Desired username
+!----------------------------------------------
+Username: "Username"
 
-!Your Desired Tag:
-Tag: "#5555"
+!----------------------------------------------
+! Your Desired Tag
+!----------------------------------------------
+Tag: "#0001"
 
+!----------------------------------------------
 ! If using color names like "red","blue" always
 ! make the first letter a Capital like "Red","Blue" or others like these "DarkGray"
-!Your Desired Background Color:
-Background: "Orange"
+! Your Desired Background Color
+!----------------------------------------------
+Background: "#5468ff"
 
+!----------------------------------------------
 ! Available are only "Online","Busy" and "Offline"
-Status: "Busy"
+! Case sensitive!
+! Your Desired Status
+!----------------------------------------------
+Status: "Online"

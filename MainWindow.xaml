@@ -26,11 +26,16 @@
 					MouseDown="Window_Drag"
 					Margin="0,0,0,470">
 				<Grid>
+					<Border Margin="18,4,612,3" CornerRadius="50">
+						<Border.Background>
+							<ImageBrush ImageSource="pack://siteoforigin:,,,/Images/PFP.png"/>
+						</Border.Background>
+					</Border>
 					<TextBlock Text="Discord Rich Presence"
 							   Padding="10,5,0,0"
 							   Foreground="Gray"
 							   FontSize="15"
-							   Margin="0,0,86,0"/>
+							   Margin="38,0,87,0"/>
 					<Button Command="{x:Static SystemCommands.CloseWindowCommand}"
 							x:Name="CloseButton"
 							Content="✕"
@@ -89,9 +94,9 @@
 					 Style="{StaticResource TextBoxTheme}"
 					 Uid="State"/>
 
-			<RadioButton Content="Start Time" Foreground="#D1D1D1" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top"/>
-			<RadioButton Content="End Time" Foreground="#D1D1D1" HorizontalAlignment="Left" Margin="131,150,0,0" VerticalAlignment="Top"/>
-			<RadioButton Content="Current Time" Foreground="#D1D1D1" HorizontalAlignment="Left" Margin="239,150,0,0" VerticalAlignment="Top"/>
+			<RadioButton x:Name="RadioBtn_Start" Content="Start Time" Foreground="#D1D1D1" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" ToolTip="Time Elapsed"/>
+			<RadioButton x:Name="RadioBtn_End" Content="End Time" Foreground="#D1D1D1" HorizontalAlignment="Left" Margin="131,150,0,0" VerticalAlignment="Top" ToolTip="Time Left"/>
+			<RadioButton x:Name="RadioBtn_Current" Content="Current Time" Foreground="#D1D1D1" HorizontalAlignment="Left" Margin="239,150,0,0" VerticalAlignment="Top" ToolTip="Set Current time"/>
 			<TextBox x:Name="Input_Time" HorizontalAlignment="Left"
 					 VerticalAlignment="Top"
 					 Margin="10,170,0,0"
